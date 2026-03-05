@@ -10069,5 +10069,6 @@ const questionBank = [
     "answer": "強調無用才能免於困苦",
     "explanation": ""
   }
+
 ];
 module.exports = questionBank;
