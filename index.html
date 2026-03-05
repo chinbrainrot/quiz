@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文言指定篇章測驗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>文言指定篇章測驗</h1>
+
+        <div id="setup-screen" class="screen active">
+            <h2>請選擇測驗課題（可多選）</h2>
+            <div class="controls">
+                <button id="select-all-btn" class="btn small-btn">全選</button>
+                <button id="deselect-all-btn" class="btn small-btn">取消全選</button>
+            </div>
+            <div id="topic-list" class="topic-grid">
+                </div>
+            <button id="start-btn" class="btn primary-btn">開始測驗</button>
+            <p id="error-msg" class="error hide">請至少選擇一個課題！</p>
+        </div>
+
+        <div id="quiz-screen" class="screen hide">
+            <div class="quiz-header">
+                <span id="progress-text">第 1 題 / 共 10 題</span>
+                <span id="current-topic-tag" class="topic-tag">課題</span>
+            </div>
+            <h3 id="question-text">題目文字會顯示在這裡</h3>
+            <div id="options-container" class="options-grid">
+                </div>
+            <div id="feedback-container" class="feedback hide">
+                <p id="explanation-text"></p>
+                <button id="next-btn" class="btn primary-btn">下一題</button>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen hide">
+            <h2>測驗完成！</h2>
+            <div class="score-display">
+                答對 <span id="score-text">0</span> / <span id="total-questions-text">10</span> 題
+            </div>
+            <p id="encouragement-msg" class="encouragement"></p>
+            <button id="restart-btn" class="btn primary-btn">再做一次隨機測驗</button>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
