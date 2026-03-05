@@ -5303,7 +5303,7 @@ const questionBank = [
     ],
     "answer": "借代",
     "explanation": "「寶馬雕車」，借代富家子弟。"
-  }
+  },
 
   {
     "topic": "論仁論孝論君子",
@@ -10072,3 +10072,4 @@ const questionBank = [
 
 ];
 module.exports = questionBank;
+
