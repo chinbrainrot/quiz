@@ -151,9 +151,9 @@ function showResults() {
     if (ratio >= 0.8) {
         msg = "太厲害了！你的文言文基礎非常扎實，繼續保持！";
     } else if (ratio >= 0.5) {
-        msg = "表現一般，對某些篇章可能還不夠熟悉，溫故而知新，加油！";
+        msg = "表現尚可，對某些篇章可能還不夠熟悉，溫故而知新，加油！";
     } else if (ratio >= 0.3) {
-        msg = "分數偏低喔！建議多翻閱課本，針對錯題好好檢討。";
+        msg = "分數偏低喔！建議多翻閱課本或重溫brainrot page影片，針對錯題好好檢討。";
     } else {
         msg = "看來需要重新學習了！別灰心，從基礎的字詞解釋開始慢慢來吧！";
     }
@@ -169,4 +169,5 @@ document.getElementById('restart-btn').addEventListener('click', () => {
 });
 
 // 啟動程式
+
 init();
